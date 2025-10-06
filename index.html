@@ -1,0 +1,260 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitacion Victor y Monica</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/rings-1.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+  </head>
+
+  <body class="center">
+    <div class="content">
+      <section class="section-home">
+        <div class="home-title center">
+          <img src="./assets/img/rings-1.svg" alt="rings" />
+          <h1>Nuestra Boda</h1>
+        </div>
+        <div class="home-content">
+          <img class="home-img" alt="photo" src="./assets/img/portada1.jpeg" />
+          <div class="box-audio">
+            <div class="container">
+              <div class="row">
+                <div class="play-music">
+                  <div id="music-animation" class="music-animation">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                    <span class="bar bar5"></span>
+                  </div>
+                  <div class="music-toggle">
+                    <a
+                      onClick="togglePlay()"
+                      id="toggle"
+                      data-text-swap="Music on"
+                      >Music off</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <audio id="music" autoplay="autoplay" loop="loop">
+              <source
+                src="./assets/IL DIVO -HASTA MI FINAL. (con letra).mp3"
+                type="audio/mpeg"
+              />
+              Tu navegador no soporta el elemento
+            </audio>
+          </div>
+          <div class="home-txt">
+            <b>BIENVENIDOS</b>
+            <p>
+              Nos llena de alegría compartir con ustedes uno de los días más
+              importantes de nuestras vidas. Con amor, les invitamos a ser parte
+              de nuestra historia y celebrar juntos el inicio de esta nueva
+              etapa.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-info">
+        <div class="overlay-section-info">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-info">
+          <div class="info-primary">
+            <h1>Victor & Monica</h1>
+            <p>
+              Con nuestro Amor, con la presencia de Dios entre nosotros y la
+              Bendición de nuestros padres
+            </p>
+          </div>
+          <div class="info-secundary">
+            <div class="info-content">
+              <b>Padres del novio</b>
+              <ul>
+                <li>Victor Hugo Cardona Flores</li>
+                <li>Cecilia Ivonne Martinez Martinez</li>
+              </ul>
+            </div>
+            <div class="info-content">
+              <b>Padres de la novia</b>
+              <ul>
+                <li>Noemi Rodriguez Castillejo</li>
+                <li>Silvestre Uribe Garcia</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-date">
+            <div class="date-info center">
+              <img width="75" src="./assets/img/rings-2.svg" alt="rings" />
+              <p class="date-text">
+                Consagramos nuestro amor ante el Señor y deseamos compartir esta
+                alegría.
+              </p>
+            </div>
+            <div class="date-box">
+              <h2>SÁBADO</h2>
+              <ul class="center">
+                <li>DIC</li>
+                <li>27</li>
+                <li>17:00</li>
+              </ul>
+            </div>
+            <ul class="date-time">
+              <li>
+                <div class="time_number" id="dias"></div>
+                <div class="time_txt">Días</div>
+              </li>
+              <li>
+                <div class="time_number" id="horas"></div>
+                <div class="time_txt">Horas</div>
+              </li>
+              <li>
+                <div class="time_number" id="minutos"></div>
+                <div class="time_txt">Minutos</div>
+              </li>
+              <li>
+                <div class="time_number" id="segundos"></div>
+                <div class="time_txt">Segundos</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-place">
+        <div class="overlay-section-place">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-place">
+          <div class="place-info center">
+            <img width="75" src="./assets/img/church.svg" alt="church" />
+            <div class="place-txt">
+              <h2>Ceremonia</h2>
+              <p>Parroquia de San Miguel Arcángel</p>
+            </div>
+          </div>
+          <a
+            class="place-btn"
+            href="https://maps.app.goo.gl/dGuBVcWdMMfe7NM6A"
+            target="_blank"
+          >
+            VER UBICACIÓN
+          </a>
+        </div>
+      </section>
+
+      <section class="section-place-salon">
+        <div class="overlay-section-place">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-place-salon">
+          <div class="place-info center">
+            <img width="105" src="./assets/img/copa.png" alt="church" />
+            <div class="place-txt">
+              <h2>Recepción / Fiesta</h2>
+              <p>AV Cuitláhuac entre PT 1</p>
+            </div>
+          </div>
+          <a
+            class="place-btn"
+            href="https://maps.app.goo.gl/fiqjryxvFAQjbFVb9"
+            target="_blank"
+          >
+            VER UBICACIÓN
+          </a>
+        </div>
+      </section>
+
+      <section class="section-slider">
+        <div class="slider-photo">
+          <img src="/assets/img/portada.jpeg" alt="" />
+        </div>
+        <div class="slider-txt">
+          <p>
+            “Mejores son dos que uno; porque tienen mejor paga de su trabajo.
+            Porque si cayeren, el uno levantará a su compañero; pero ¡ay del
+            solo! que cuando cayere, no habrá segundo que lo levante.”
+          </p>
+          <b> - Eclesiastés 4:9-10</b>
+        </div>
+      </section>
+
+      <section class="section-padrinos">
+        <div class="info-primary">
+          <b>Nuestros Padrinos</b>
+
+          <p>
+            César Joaquín García Guerrero y Xenia Mabel Martínez López, con
+            profundo cariño y gratitud, agradecemos a nuestros padrinos por
+            acompañarnos y ser parte esencial de este día tan especial.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-info-adicional">
+        <div class="info-clothes">
+          <img height="60" src="./assets/img/Clothes.svg" alt="clothes" />
+          <div class="clothes-txt">
+            <h2>Vestimenta</h2>
+            <p>
+              La vestimenta es elegante, pensada para que disfrutes de esta
+              noche especial con elegancia y libertad de movimiento.
+            </p>
+          </div>
+        </div>
+        <div class="info-separator">
+          <img src="./assets/img/separator.svg" alt="separator" />
+        </div>
+        <div class="info-envelope">
+          <img width="60" src="./assets/img/envelope.svg" alt="envelope" />
+          <div class="envelope-txt"></div>
+          <h2>Mesa de regalos</h2>
+          <p>
+            El mejor regalo es contar con tu presencia en este día tan especial.
+            Si deseas tener un detalle con nosotros, será recibido con cariño y
+            gratitud.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-message">
+        <div class="overlay-section-message">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-message">
+          <p>
+            Los mejores momentos de la vida <br />
+            merecen ser compartidos
+          </p>
+          <b>¡Gracias por acompañarnos!</b>
+          <button class="confirmar">
+            <a href="https://wa.link/jzskce"> Confirmar asistencia </a>
+          </button>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        Design by
+        <a
+          href="https://www.facebook.com/profile.php?id=61568997140138"
+          target="_blank"
+          >Mirai</a
+        >
+        @2025
+      </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
